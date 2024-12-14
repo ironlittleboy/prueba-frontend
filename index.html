@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2 class="title">Reservaciones</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href=""> Inicar sesion </a>
+          </li>
+          <li>
+            <a href="http://localhost:5173/src/pages/register/register.html"> Registrarse </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="formContainer">
+        <form id="loginForm">
+          <div class="formTitle">Inicia sesion</div>
+          <div class="formGroup">
+            <label for="email"> Correo electronico </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="alguien@ejemplo.com"
+            />
+          </div>
+          <div class="formGroup">
+            <label for="password"> Contraseña </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              placeholder="********"
+            />
+          </div>
+          <div class="btn-container">
+            <button type="submit">Iniciar sesion</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #ffffff;
+  color: #242424;
+
+
+}
+
+a {
+  font-weight: 500;
+  color: #ffffff;
+}
+.title-2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #747bff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1em;
+  min-height: calc(100vh - 4em);
+  width: 100%;
+}
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 20px;
+  border: 1px solid #646cff;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #f4f4f4;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #747bff;
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1em;
+}
+
+.formContainer {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 500px;
+  background-color: #ffffff;
+}
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+.formTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #747bff;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+.formGroup  label {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+input {
+  border-radius: 8px;
+  border: 1px solid #ced0ff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: transparent;
+  color: white;
+  transition: border-color 0.25s;
+}
+
+input:focus {
+ outline: none;
+}
+header button {
+  border-radius: 8px;
+  border: 1px solid #ffff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: #ffff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+header button:hover {
+  color: #747bff;
+  background-color: #ffff;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #747bff;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.noProperties {
+  text-align: center;
+  padding: 20px 40px;
+  background-color: #747bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.filters {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1em;
+  background-color: #747bff;
+  color: white;
+  border-radius: 5px;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+select {
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #747bff;
+}
+.filterGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+select:focus {
+  outline: none;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  padding: 20px 40px;
+  background-color: #747bff;
+  color: white;
+}
+th, td {
+  padding: 0.5em;
+  text-align: center;
+}
+
+tbody {
+  overflow: auto;
+  max-height: 300px;
+}
+
+tr {
+  height: 60px;
+}
+
+tbody tr:hover {
+  background-color: #f4f4f4;
+}
+.font-bold {
+  font-weight: bold;
+}
+.line-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.formGroupSwal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-xl {
+  font-size: 1.5em;
+}
+.color-primary {
+  color: #747bff;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}

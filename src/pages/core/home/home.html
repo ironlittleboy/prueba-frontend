@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservas chidas</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h2 class="title-2">Reservaciones</h2>
+      </div>
+      <div>
+        <button type="button" id="logout">Cerrar sesion</button>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h1 class="title">Reservas chidas</h1>
+      </div>
+      <div class="filters">
+        <h2>Filtros</h2>
+        <div class="filterGroup">
+          <label for="locationFilter"  class="font-bold">Ubicación</label>
+          <input type="text" name="locationFilter" id="locationFilter" />
+        </div>
+        <div class="filterGroup">
+          <label for="propertyTypeFilter"  class="font-bold">Tipo de propiedad</label>
+          <select name="propertyTypeFilter" id="propertyTypeFilter">
+            <option value="all">Todos</option>
+            <option value="Casa">Casa</option>
+            <option value="Departamento">Departamento</option>
+            <option value="Habitacion">Habitación</option>
+            <option value="Hotel">Hotel</option>
+          </select>
+        </div>
+        <div class="filterGroup">
+          <label for="price-begin" class="font-bold">Precio por noche</label>
+          <span>Desde</span>
+          <input type="number" name="price-begin" id="price-begin" />
+          <label for="price-end">Hasta</label>
+          <input type="number" name="price-end" id="price-end" />
+          <button class="line-btn" type="button" id="priceFilter">
+            buscar por precios
+          </button>
+        </div>
+      </div>
+      <div class="tableContainer">
+        <h2 class="title">Propiedades disponibles</h2>
+       <table>
+        <thead>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Ubicación</th>
+              <th>Tipo de Propiedad</th>
+              <th>Precio por Noche</th>
+              <th>Disponibilidad</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          
+        </thead>
+        <tbody id="tableBody"></tbody>
+       </table>
+      </div>
+      <div class="myReserves">
+        <div class="tableContainer">
+          <div class="header">
+            <h2 class="title">Mis reservas</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Tipo de Propiedad</th>
+                <th>Precio por Noche</th>
+                <th>Disponibilidad</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="myReservesTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="home.js"></script>
+  </body>
+</html>
