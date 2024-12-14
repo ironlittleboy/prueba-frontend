@@ -22,4 +22,4 @@ Sigue estos pasos para configurar el proyecto en tu entorno local:
 Primero, clona el repositorio a tu máquina local:
 
 ```bash
-[git clone https://github.com/tu-usuario/tu-proyecto.git](https://github.com/ironlittleboy/prueba-frontend.git)
+git clone https://github.com/ironlittleboy/prueba-frontend.git
